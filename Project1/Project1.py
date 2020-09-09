@@ -17,8 +17,12 @@ State(A)   Beds(B)    Occupancy_Rate(D)  Availability(F)   Adult_Population(J) P
 =================================================================================================
 Source:https://globalepidemics.org/hospital-capacity/
 '''
+str = hospital_capacity_by_state_string
+print(str)
 
-print(hospital_capacity_by_state_string)
+#print(str.upper())
+#print(str.swapcase())
+print(str.casefold())
 #print(hospital_capacity_by_state_string) _amt
 #print(type(hospital_capacity_by_state_string)) _amt
 
@@ -35,6 +39,13 @@ print(list_of_tuple)
 #print(list_of_tuple) _amt
 #for i in list_of_tuple: _amt
 #   print(i)
+
+'''
+for each_tuple in list_of_tuple:
+    for each_item in each_tuple:
+        each_item[0] = HospitalCapacity(each_item[0], each_item[1], each_item[2])
+    print("I hope we made an object above")
+'''
 
 # Represent the data as a custom class
 
@@ -53,3 +64,4 @@ class HospitalCapacity:
 
 if __name__ == "__main__":
     print("test")
+
